@@ -1,6 +1,8 @@
 //ROUTES
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
+//PAGES
+import { Home, Leads, Profile, Login, Registration } from "./pages"
 
 
 function App() {
@@ -10,11 +12,11 @@ function App() {
     <>
        <Router>
          <Routes>
-           <Route path="/" element={<>LOGIN</>}/>
-            <Route path="/cadastro" element={<>CADASTRO</>}/>
-             <Route path="/home" element={<>HOME</>}/>
-              <Route path="/leads" element={<>LEADS</>}/>
-               <Route path="/perfil" element={<>PERFIL</>}/>
+           <Route path="/" element={<Login/>}/>
+            <Route path="/cadastro" element={<Registration/>}/>
+             <Route path="/home" element={<Home/>}/>
+              <Route path="/leads" element={<Leads/>}/>
+               <Route path="/perfil" element={<Profile/>}/>
          </Routes>
        </Router>
     </>
